@@ -1,0 +1,117 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Background Styling */
+body {
+  background: linear-gradient(135deg, #6891ce, #405d99);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Main Container */
+main {
+  width: 90%;
+  max-width: 400px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+main:hover {
+  transform: scale(1.03);
+}
+
+/* Heading */
+h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Input Field */
+#search {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  border: 2px solid #6891ce;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+#search:focus {
+  border-color: #405d99;
+}
+
+/* To-Do List Items */
+#to-do {
+  list-style: none;
+  margin-top: 10px;
+}
+
+/* List Items Styling */
+#to-do li {
+  background: #f1f1f1;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: fadeIn 0.4s forwards;
+}
+
+/* List Items Hover Effect */
+#to-do li:hover {
+  background: #ddd;
+}
+
+/* Delete Button (Bin Icon) */
+#to-do li img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+#to-do li img:hover {
+  transform: scale(1.2);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade-out Animation */
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  main {
+    width: 95%;
+  }
+}
