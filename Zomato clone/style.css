@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  color: #333;
+  
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: white;
+}
+
+#logo img {
+  width: 120px;
+ 
+}
+#curser{
+  height: 35px;
+  width: 35px;
+  background-color: #ffffff;
+  display: flex;
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0;
+ 
+  mix-blend-mode: difference;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+#main_logo{
+width: 200px;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: url("https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png")
+    no-repeat center center;
+  background-size: cover;
+  color: white;
+}
+
+.search-bar {
+  margin-top: 20px;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 60%;
+  max-width: 400px;
+  border-radius: 5px;
+  border: none;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: white;
+  color: #ff0000;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.features {
+  text-align: center;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center; /* Centers items horizontally */
+  gap: 20px; /* Adds space between feature boxes */
+}
+h2{
+  text-align: center;
+}
+.feature-box {
+  background: rgb(255, 0, 0);
+  color: white;
+  padding: 0px;
+  max-width: 300px;
+  border-radius: 35px 0px 35px 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1; /* Ensures equal width distribution */
+  min-width: 250px; /* Prevents shrinking too much */
+}
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+footer {
+  background-color: #ff0000;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
