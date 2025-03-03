@@ -1,0 +1,100 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(85, 85, 165);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Container */
+main {
+  width: 90%;
+  max-width: 400px;
+  height: 450px;
+  background-color: rgb(255, 255, 255);
+  border: 3px solid black;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Stories Container */
+#main-story {
+  width: 100%;
+  height: 100px;
+  border-bottom: 0.1px solid rgb(44, 43, 43);
+  padding: 5px;
+  white-space: nowrap;
+  overflow-x: auto;
+  display: flex;
+  gap: 10px;
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+#main-story::-webkit-scrollbar {
+  display: none;
+}
+#main-story::-webkit-scrollbar-thumb {
+display: none;
+}
+
+/* Story Items */
+#storys {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid black;
+  display: inline-block;
+  flex-shrink: 0;
+}
+#storys img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Full Story Viewer */
+#full_story {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 8px;
+  display: none;
+  background-size: cover;
+  background-position: center;
+}
+
+/* 🔹 Responsive Adjustments */
+@media (max-width: 500px) {
+  main {
+    max-width: 95%;
+    height: 400px;
+  }
+  #storys {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 350px) {
+  main {
+    max-width: 98%;
+    height: 380px;
+  }
+  #storys {
+    width: 60px;
+    height: 60px;
+  }
+}
